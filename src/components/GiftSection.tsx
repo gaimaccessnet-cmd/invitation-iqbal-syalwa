@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Gift, Copy, Check, CreditCard, MessageCircle } from 'lucide-react';
+import { Copy, Check } from 'lucide-react';
 import { SongketDivider } from './SongketDivider';
 import confetti from 'canvas-confetti';
 
@@ -128,23 +128,7 @@ export const GiftSection: React.FC = () => {
           })}
         </div>
 
-        {/* WhatsApp confirmation link */}
-        <div className="mt-6 p-4 rounded-2xl bg-[#24060C] border border-[#ECC265]/20 text-center">
-          <p className="text-xs text-amber-200/70 mb-2 font-light">
-            Sudah mengirimkan tanda kasih? Anda dapat konfirmasi langsung ke mempelai:
-          </p>
-          <a
-            href="https://wa.me/6281234567890?text=Halo%20Iqbal%20%26%20Syalwa,%20selamat%20atas%20pernikahannya!%20Saya%20sudah%20mengirimkan%20tanda%20kasih."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366]/30 text-green-300 text-xs font-semibold border border-green-500/30 transition-colors"
-          >
-            <MessageCircle className="w-4 h-4 text-green-400" />
-            <span>Konfirmasi Hadiah via WhatsApp</span>
-          </a>
-        </div>
-
-        <SongketDivider variant="simple" />
+        <SongketDivider variant="simple" className="mt-8" />
       </div>
     </section>
   );
