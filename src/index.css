@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-brush {
+  font-family: 'Alex Brush', cursive;
+}
+
+/* Gold foil gradient effect */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #ECC265 0%, #D4AF37 40%, #AA8022 75%, #F4D37A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #E6C265 0%, #C99E32 50%, #A47B1E 100%);
+}
+
+.border-gold-gradient {
+  border-image: linear-gradient(to right, #ECC265, #AA8022, #ECC265) 1;
+}
+
+/* Subtle songket patterned background */
+.bg-songket-pattern {
+  background-color: #25090F;
+  background-image: radial-gradient(#C59B27 0.75px, transparent 0.75px), radial-gradient(#C59B27 0.75px, #25090F 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Smooth pulse animation for music disc */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 12s linear infinite;
+}
+
